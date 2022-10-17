@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+    </style>
+    <title>Pair Programming 1 / Lautaro Rocha y Facundo Bustos</title>
+</head>
+<body>
+ <header>
+    <nav>
+        <ul>
+            <li><a href="#uno">Primer Consigna</a></li>
+            <li><a href="#dos">Segunda Consigna</a></li>
+            <li><a href="#tres">Tercera Consigna</a></li>
+        </ul>
+    </nav>
+ </header>
+ <main>
+    <h1>Pair Programming 1 / Lautaro Rocha y Facundo Bustos</h1>
+    <section id="uno">
+        <h2> 1: Desarrolá un formulario que contenga un elemento que cuente con una datalist de cinco opciones y que dos inputs con placeholders</h2>
+
+        <form action="">
+            <label for="mycolor"> ¿De qué color querés la prenda? <br>
+            <input list="colors" name="mycolor"> <br>
+            <datalist id="colors">
+                <option value="rojo"></option>
+                <option value="azul"></option>
+                <option value="verde"></option>
+                <option value="magenta"></option>
+                <option value="negro"></option>
+                <option value="blanco"></option>
+            </datalist>
+            </label>
+            <label for="myadress">¿A dónde la mandamos? <br>
+            <input type="text" placeholder="A mi casa..." id="myadress"></label> <br>
+            <label for="myname">¿A nombre de quién? <br>
+            <input type="text" placeholder="Al mío..." id="myname"></label> <br>
+            <button type="submit">CONFIRMAR</button>
+        </form>
+    </section>
+    <section id="dos">
+        <h2> 2: Realizá tres tablas;
+            la primera tiene dos filas y dos columnas.
+            la segunda tiene tres columnas y cinco filas
+            y la tercera tiene cuatro columnas y tres filas
+           </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>JUGADORES DE RIVER PLATE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arquero</td>
+                        <td>Franco Armani</td>
+                    </tr>
+                    <tr>
+                        <td>Mediocampista</td>
+                        <td>Enzo Peréz</td>
+                    </tr>
+            
+                </tbody>
+            </table>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Habitantes</th>
+                        <th>Continente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Argentina </td>
+                        <td>7.045.164</td>
+                        <td>Ámerica del Sur</td>
+                    </tr>
+                    <tr>
+                        <td>Escocia</td>
+                        <td>3.548.764</td>
+                        <td>Europa Occidental</td>
+                    </tr>
+                    <tr>
+                        <td>China</td>
+                        <td>10.785.465</td>
+                        <td>Asia Central</td>
+                    </tr>
+                    <tr>
+                        <td>Alemania</td>
+                        <td>5.478.645</td>
+                        <td>Europa</td>
+                    </tr>
+                    <tr>
+                        <td>Costa de Marfil</td>
+                        <td>3.456.984</td>
+                        <td>África</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>PELÍCULAS MÁS TAQUILLERAS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Shining</td>
+                        <td>1998</td>
+                        <td>Kubrik</td>
+                        <td>$3.456.321</td>
+                    </tr>
+                    <tr>
+                        <td>Apocalypse Now</td>
+                        <td>1996</td>
+                        <td>Francis Coppolla</td>
+                        <td>$3.745.478</td>
+                    </tr>
+                    <tr>
+                        <td>Harry Potter 1</td>
+                        <td>2001</td>
+                        <td>David Yates</td>
+                        <td>$5.456.789</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>CONTINENTES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AMERICA</td>
+                        <td>AFRICA</td>
+                        <td>EUROPA</td>
+                        <td>ASIA</td>
+                    </tr>
+                    <tr>
+                        <td>Argentina</td>
+                        <td>Nigeria</td>
+                        <td>España</td>
+                        <td>japon</td>
+                    </tr>
+                    <tr>
+                        <td>Bolivia</td>
+                        <td>Marruecos</td>
+                        <td>Portugal</td>
+                        <td>China</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Uruguay</td>
+                        <td>Sudafrica</td>
+                        <td>Italia</td>
+                        <td>indonesia</td>
+                    </tr>
+            
+            
+                    
+                </tbody>
+            
+            </table>
+            
+    </section>
+    <section id="tres">
+        <h2> 3: Armá un elemento form que funcione como un catalogo de productos. El usuario elige uno y realiza la compra al apretar el botón</h2>
+        <form action="" method="post">
+            <h2>¡Elegí tu producto!</h2>
+            <p>solo podés comprar de uno a la vez</p>
+               <img src="https://www.ansilta.com/img/articulos/2021/05/remera_hombre_sismo_de_algodon_thumb1.jpg" alt="remera roja con leve dseño">
+               <input type="radio" name="selected-product" value="remera-roja">
+             </label>
+            
+             <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/001/719/894/products/remera_lisa_rosa11-63a279fbdc9baaa23816252536232409-640-0.png" alt="remera de algodón liso color rosa">
+             <input type="radio" name="selected-product" value="remera-rosa">
+            
+             <img src="http://d3ugyf2ht6aenh.cloudfront.net/stores/064/882/products/remera_certified_estampados_mockup_brawl-31-d3642127494241f43f15965803103497-640-0.jpg" alt="remera blanca con motivo cartoon">
+             <input type="radio" name="selected-product" value="remera-blanca">
+            
+             <img src="https://i.pinimg.com/236x/f6/93/ad/f693ad80ad5e7ea5d6a2ed8752a35418.jpg" alt="remera negra con motivo cartoon">
+             <input type="radio" name="selected-product" value="remera-negra"> 
+             <br>
+             <button type="submit">COMPRAR</button>
+         </form>
+    </section>
+ </main>
+</body>
+</html>
+
