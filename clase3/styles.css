@@ -1,52 +1,217 @@
-/* reset de CSS para eliminar estilos por defecto del navegador */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* el body se convierte en una grilla*/
-body{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    /* se va a repetir 6 veces una columna o fila de 1 fraccion del espacio disponible */
-    grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: repeat(6, 1fr);
+:root{
+    --background: #e8eaf6;
+    --primary: #ff6090;
+    --secondary: #757de8;
+    --text-dark: hsl(333, 100%, 10%);
+    --text-light: hsl(333, 100%, 90%);
 }
 
-/* se crea la animacion ubicando los tiempos como porcentaje y dando adentro los cambios de estilo */
-@keyframes movingDiv {
+@keyframes shout{
     0%{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    25%{
-        grid-column: 12;
-        grid-row: 1;
-        color: black;
+        transform: scale(5);
     }
     50%{
-        grid-column: 12;
-        grid-row: 6;
-        background-color: blue;
+        transform: scale(5.2) rotate(-15deg);
+
     }
     100%{
-        grid-column: 1;
-        grid-row: 6;
-        background-color: yellow;
+        transform: scale(5);
+    }
+}
+@keyframes look{
+ 0%{
+    transform: scale(5) rotate(0deg);
+ }
+ 25%{
+    transform: scale(5.1) rotate(-20deg);
+ }
+ 50%{
+    transform: scale(5.4) rotate(0deg);
+    filter: drop-shadow(0px 0px 5px var(--text-dark));
+ }
+ 60%{
+    transform: scale(5.4) rotate(0deg);
+ }
+ 75%{
+    transform: scale(5.1) rotate(15deg);
+ }
+ 100%{
+    transform: scale(5) rotate(0deg);
+
+ }
+}
+
+
+body{
+    background-color: var(--background);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 15px;
+    margin: 1rem auto 3rem;
+    padding: 1rem;
+}
+    header a {
+        text-decoration: none;
+    }
+    header a h1{
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: var(--text-light);
+    }
+
+    header nav ul {
+        display: flex;
+        gap:1rem;
+        list-style: none;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    header nav ul li a:hover{
+        color: var(--text-light);
+
+    }
+
+section>div{
+    width: 70%;
+    height: clamp(8rem, 55vh, 20rem);
+    background-color: var(--primary);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 3rem auto;
+    transition: all .5 ease-in-out;
+}
+    section>div>svg{
+        fill: var(--text-light);
+        transform: scale(5);
+    }
+    section>div:hover{
+        transform: scale(1.01);
+        box-shadow: -5px 5px 15px #333;
+    }
+    section>div:hover svg{
+        animation: shout 1s infinite;
+    }
+    section>div>p{
+        margin: .5rem;
+        font-size: clamp(1rem, 5vw, 2rem);
+        font-weight: bolder;
+        color: var(--text-dark);
+        width: 80%;
+    }
+    /* segunda card */
+    section>div:last-of-type{
+        flex-direction: column-reverse;
+        background-color: #757de8;
+    }
+    section>div:last-of-type:hover svg{
+        animation: look 2s infinite ease-in-out;
+    }
+footer{
+    width: 100vw;
+    background-color: var(--secondary);
+    font-weight: bolder;
+    color: var(--text-light);
+    padding: 2rem;
+    display: grid;
+    place-content: center;
+}
+
+
+@media(min-width:800px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    section>div{
+        width: 100%;
+        flex-direction: row;
+    }
+    section>div svg{
+    }
+    section>div p {
+        width: 50%;
+    }
+    section>div:last-of-type{
+        flex-direction: row-reverse;
     }
 
 }
-/* en la propiedad animation se refiere a la creada en la regla keyframes. se le agregan el tiempo en que se desarrolla y cuantas veces se sigue reproduciendo */
 
-/* con la propiedad transition indicamos que cada vez que alguna propiedad del mismo elemento cambié, lo hará gradualmente. indicamos propiedad (usando all abarcás todas), duración y suavidad */
-div{
-    width: 20vw;
-    height: 15vh;
-    background-color: red;
-    transition: all .5s ease-in;
-    animation: movingDiv 5s infinite;
+
+/* ESTILOS DE PARTNERS */
+.partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
+.partners h2{
+    color: var(--text-dark);
+    font-size: 2rem;
+}
+.partners span{
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 1rem auto;
+}
+
+.partners-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-auto-flow: dense;
+
+    grid-gap: 1rem;
+    place-items: center;
+    background-color:transparent !important;
+}
+
+.partners-grid img{
+    width: 150px;
+    height: auto;
+}
+
+
+
+.partners>div:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+@media (min-width:800px){
+    .partners{
+        width: 80vw;
+    }
+} 
