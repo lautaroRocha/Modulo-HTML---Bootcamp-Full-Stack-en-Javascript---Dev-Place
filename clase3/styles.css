@@ -1,0 +1,52 @@
+/* reset de CSS para eliminar estilos por defecto del navegador */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* el body se convierte en una grilla*/
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* se va a repetir 6 veces una columna o fila de 1 fraccion del espacio disponible */
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/* se crea la animacion ubicando los tiempos como porcentaje y dando adentro los cambios de estilo */
+@keyframes movingDiv {
+    0%{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    25%{
+        grid-column: 12;
+        grid-row: 1;
+        color: black;
+    }
+    50%{
+        grid-column: 12;
+        grid-row: 6;
+        background-color: blue;
+    }
+    100%{
+        grid-column: 1;
+        grid-row: 6;
+        background-color: yellow;
+    }
+
+}
+/* en la propiedad animation se refiere a la creada en la regla keyframes. se le agregan el tiempo en que se desarrolla y cuantas veces se sigue reproduciendo */
+
+/* con la propiedad transition indicamos que cada vez que alguna propiedad del mismo elemento cambié, lo hará gradualmente. indicamos propiedad (usando all abarcás todas), duración y suavidad */
+div{
+    width: 20vw;
+    height: 15vh;
+    background-color: red;
+    transition: all .5s ease-in;
+    animation: movingDiv 5s infinite;
+}
