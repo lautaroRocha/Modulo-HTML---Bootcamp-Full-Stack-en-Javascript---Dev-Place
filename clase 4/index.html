@@ -3,35 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Viajes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+      #carouselExampleControls img{
+        width: auto;
+        height: 70vh;
+        max-height: 450px;
+      }
+
+      
+    </style>
   </head>
   <body>
     <header>    
-        <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
-            <div class="container-fluid  d-flex justify-content-center">
-              <a class="navbar-brand text-light" href="#">Navbar</a>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-dark text-center">
+            <div class="container-fluid  d-flex justify-content-around">
+              <a class="navbar-brand text-light" href="#">Viajes.com</a>
               <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                  <li class="nav-item ">
-                    <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-                  </li>
                   <li class="nav-item">
-                    <a class="nav-link text-light" href="precios.html">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu bg-dark">
-                      <li><a class="dropdown-item text-light" href="#">Action</a></li>
-                      <li><a class="dropdown-item text-light" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider text-light"></li>
-                      <li><a class="dropdown-item text-light" href="#">Something else here</a></li>
-                    </ul>
+                    <a class="nav-link text-light" href="precios.html">Precios</a>
                   </li>
                 </ul>
               </div>
@@ -39,7 +34,7 @@
         </nav>
     </header>    
     <main class="container text-center">
-            <h1 class="mt-5">Bootstrap Demo</h1>
+            <h1 class="mt-5">El viaje de tus sueños</h1>
 
             <button type="button" class="btn btn-secondary mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Tocáme para que salga un modal
@@ -53,7 +48,7 @@
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      Este es el cuerpo del modal, qué increíble
+                      Este es el cuerpo del modal, qué increíble.
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">X</button>
@@ -87,9 +82,7 @@
               </div>
     </main>
         <!-- Footer -->
-        <footer
-                class="text-center text-lg-start text-white bg-dark"
-                >
+        <footer class="text-center text-lg-start text-white bg-dark">
           <!-- Grid container -->
           <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -98,7 +91,7 @@
               <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">FOOTER CONTENT</h5>
+                  <h5 class="text-uppercase">ESTE ES MI FOOTER</h5>
       
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -110,87 +103,19 @@
                 <!--Grid column-->
       
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-      
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-white">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
+
                 <!--Grid column-->
       
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-      
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-white">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
+
                 <!--Grid column-->
       
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-      
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-white">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
+   
                 <!--Grid column-->
       
                 <!--Grid column-->
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase">Links</h5>
-      
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#!" class="text-white">Link 1</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 2</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 3</a>
-                    </li>
-                    <li>
-                      <a href="#!" class="text-white">Link 4</a>
-                    </li>
-                  </ul>
-                </div>
+
                 <!--Grid column-->
               </div>
               <!--Grid row-->
@@ -199,84 +124,13 @@
       
             <hr class="mb-4" />
       
-            <!-- Section: CTA -->
-            <section class="">
-              <p class="d-flex justify-content-center align-items-center">
-                <span class="me-3">Register for free</span>
-                <button type="button" class="btn btn-outline-light btn-rounded">
-                  Sign up!
-                </button>
-              </p>
-            </section>
-            <!-- Section: CTA -->
-      
-            <hr class="mb-4" />
-      
-            <!-- Section: Social media -->
-            <section class="mb-4 text-center">
-              <!-- Facebook -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-facebook-f"></i
-                ></a>
-      
-              <!-- Twitter -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-twitter"></i
-                ></a>
-      
-              <!-- Google -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-google"></i
-                ></a>
-      
-              <!-- Instagram -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-instagram"></i
-                ></a>
-      
-              <!-- Linkedin -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-linkedin-in"></i
-                ></a>
-      
-              <!-- Github -->
-              <a
-                 class="btn btn-outline-light btn-floating m-1"
-                 href="#!"
-                 role="button"
-                 ><i class="fab fa-github"></i
-                ></a>
-            </section>
+
             <!-- Section: Social media -->
           </div>
-          <!-- Grid container -->
       
-          <!-- Copyright -->
-          <div
-               class="text-center p-3"
-               style="background-color: rgba(0, 0, 0, 0.2)"
-               >
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/"
-               >MDBootstrap.com</a
-              >
+          <div class="text-center p-3">
+           CONSIGNA DEL 20/10:
           </div>
-          <!-- Copyright -->
         </footer>
         <!-- Footer -->
 
