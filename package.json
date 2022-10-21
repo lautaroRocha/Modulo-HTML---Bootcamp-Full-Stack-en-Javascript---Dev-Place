@@ -1,0 +1,25 @@
+{
+  "name": "challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss clase5/sass/main.scss clase5/styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautaroRocha/Modulo-HTML---Bootcamp-Full-Stack-en-Javascript---Dev-Place.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lautaroRocha/Modulo-HTML---Bootcamp-Full-Stack-en-Javascript---Dev-Place/issues"
+  },
+  "homepage": "https://github.com/lautaroRocha/Modulo-HTML---Bootcamp-Full-Stack-en-Javascript---Dev-Place#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  }
+}
