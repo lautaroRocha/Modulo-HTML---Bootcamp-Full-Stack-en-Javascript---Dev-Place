@@ -35,7 +35,8 @@ section div {
   transition: all .5s ease-in-out; }
   section div:hover {
     transform: scale(1.01);
-    box-shadow: -5px 5px 15px #333; }
+    box-shadow: -5px 5px 15px #333;
+    cursor: pointer; }
     section div:hover svg {
       animation: shout 1s infinite; }
   section div svg {
@@ -76,6 +77,10 @@ section div:last-of-type {
     font-size: 1.5rem;
     font-weight: bolder;
     margin: 1rem auto; }
+  .partners div:hover {
+    cursor: auto;
+    transform: none;
+    box-shadow: none; }
   .partners .partners-grid {
     display: grid;
     width: 100%;

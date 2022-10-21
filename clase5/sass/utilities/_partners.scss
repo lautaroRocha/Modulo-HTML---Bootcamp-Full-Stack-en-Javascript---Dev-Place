@@ -13,6 +13,11 @@
     font-weight: bolder;
     margin: 1rem auto;
     }
+    div:hover{
+        cursor: auto;
+        transform: none;
+        box-shadow: none;
+    }
     .partners-grid {
         display: grid;
         width: 100%;

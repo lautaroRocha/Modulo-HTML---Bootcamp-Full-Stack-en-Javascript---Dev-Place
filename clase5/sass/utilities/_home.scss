@@ -1,6 +1,6 @@
 @import 'animations';
   
-  section{
+section{
     div{
     width: 70%;
     height: clamp(8rem, 55vh, 20rem);
@@ -16,6 +16,7 @@
     &:hover{
         transform: scale(1.01);
         box-shadow: -5px 5px 15px #333;
+        cursor: pointer;
         svg{
             animation: shout 1s infinite;
         }
